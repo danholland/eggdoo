@@ -24,6 +24,7 @@ aldeed:collection2@3.0.0
 aldeed:autoform
 dynamic-import
 
+aldeed:template-extension
 accounts-ui
 accounts-google
 useraccounts:flow-routing

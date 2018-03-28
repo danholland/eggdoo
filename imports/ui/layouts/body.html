@@ -1,23 +1,31 @@
-<template name="App_body">
-  <body>
+<template name="App_body_old">
+    {{ >navbar}}
     <div class="container">
-      <header>
-            {{> loginButtons}}
-        <h1>Todo List</h1>
-        <form class="new-task">
-            <input type="text" name="text" placeholder="Type to add new tasks" />
-          </form>
-      </header>
-   
       <ul>
         {{#each tasks}}
           {{> task}}
         {{/each}}
       </ul>
     </div>
-  </body>
+    <footer class="page-footer">Footer</footer>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
 </template>
-  
+
 <template name="task">
   <li>{{text}}</li>
+</template>
+
+
+
+<template name="App_body">
+  <header>
+      {{> Template.dynamic template=nav}}
+  </header>
+  <main>
+    <div id="content grey lighten-3" style="height: 100%;">
+      {{> Template.dynamic template=main}}
+    </div>
+  </main>
+  {{> Template.dynamic template=footer}}
 </template>
