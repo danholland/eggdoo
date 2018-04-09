@@ -14,7 +14,7 @@ FlowRouter.route('/', {
     action: function(params, queryParams) {
       BlazeLayout.render('App_body', {
         footer: "App_footer",
-        main: "Tasks_list",
+        main: "App_tasks",
         nav: "App_navbar",
       });
     }

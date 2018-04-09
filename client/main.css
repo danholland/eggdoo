@@ -11,3 +11,30 @@ main {
 .brand-logo {
     font-size: 22px !important;
 }
+
+.notebox {
+    border: none !important;
+    margin: 0px !important;
+    padding: 0 !important;
+}
+
+.notebox:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.titlebox {
+    border-bottom: none !important;
+    margin: 0px !important;
+    font-weight: bold !important;
+}
+
+.titlebox:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    font-weight: bold !important;
+}
+
+.hidden {
+    display: none;
+}

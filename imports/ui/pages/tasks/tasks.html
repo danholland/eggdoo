@@ -1,5 +1,16 @@
-<template name="Tasks_list">
-    <div class="card">
-        <div class="card-content">Something</div>
+<template name="App_tasks">
+    {{> Tasks_input }}
+</template>
+
+<template name="Tasks_input">
+    <div class="container">
+        <div class="card">
+            <div class="container">
+                <div class="input-field">
+                    <input placeholder="Title" id="task-title" type="text" class="titlebox hidden">
+                    <input placeholder="Take a note..." id="task-note" type="text" class="notebox">
+                </div>
+            </div>
+        </div>
     </div>
 </template>
